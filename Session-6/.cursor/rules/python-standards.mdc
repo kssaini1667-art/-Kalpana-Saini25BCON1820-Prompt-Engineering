@@ -1,0 +1,23 @@
+---
+description: Python readability and style standards for this project
+globs: "**/*.py"
+alwaysApply: false
+---
+
+# Python standards
+
+- Use descriptive names (`student_average`, not `a` or `s`).
+- Remove unused imports.
+- Extract repeated calculations into one reusable function.
+- Name a hard-coded number if it is used more than once (`NUM_SUBJECTS = 3`).
+- Use f-strings instead of string concatenation.
+- Give public functions a docstring (purpose, arguments, return value).
+- Do not add features or change calculations, grade logic, output text, spacing, or decimal precision unless asked.
+
+```python
+# BAD
+print(d[i][0] + " " + str(a) + g)
+
+# GOOD
+print(f"{student[0]} {average}{grade}")
+```
